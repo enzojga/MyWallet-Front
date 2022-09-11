@@ -15,10 +15,11 @@ const MainPage = styled.div`
         margin-bottom: 24px;
         font-family: 'Saira Stencil One';
     }
-    p{
+    a{
         margin-top: 36px;
         color: white;
         font-weight: 700;
+        text-decoration: none;
     }
 `
 const Form = styled.form`
@@ -32,6 +33,7 @@ const Form = styled.form`
         border-radius: 5px;
         border: none;
         margin-bottom: 13px;
+        font-size: 20px;
         ::placeholder{
             font-size: 20px;
             color: black;
