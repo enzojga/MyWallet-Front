@@ -84,7 +84,8 @@ const Historic = styled.div`
     background-color: white;
     border-radius: 5px;
     display: flex;
-    overflow-y: scroll;
+    position: relative;
+    overflow-x:hidden;
     & > p{
         font-size: 20px;
         color: #868686;
@@ -131,12 +132,14 @@ const Interaction = styled.div`
 `
 
 const Total = styled.span`
-    width:100% ;
-    align-self: center;
+    width: calc(100% - 30px);
+    position: absolute;
+    bottom: 0;
     justify-self: flex-end;
     font-size: 17px;
     display: flex;
     justify-content: space-between;
+    margin: 0 12px 0 20px;
     strong{
         font-weight: 700;
     }

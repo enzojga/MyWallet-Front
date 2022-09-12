@@ -21,8 +21,8 @@ export default function(){
             return;
         }
         const promisse = axios.post("http://localhost:5000/sing-up",{name,email,password});
-        promisse.then(p => console.log(p),navigate("/"));
-        promisse.catch(p => console.log(p),alert("preencha os dados corretamente"));
+        promisse.then(p => {console.log(p);navigate("/")});
+        promisse.catch(p => {console.log(p);alert("preencha os dados corretamente")});
     }
 
     return(
