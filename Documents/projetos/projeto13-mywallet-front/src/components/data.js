@@ -13,4 +13,4 @@ function getConfig() {
     return config;
 }
 
-export default { getToken, getConfig }
+export { getToken, getConfig }

@@ -7,13 +7,14 @@ export default function SingIn() {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    
     const navigate = useNavigate();
-    console.log(email, password);
+
     function sendLogin(e) {
         e.preventDefault();
 
         const promisse = axios.post("http://localhost:5000/sing-in", { email, password });
-        promisse.then(p => { localStorage.setItem('token',JSON.stringify(p.data.token)); navigate("/historic") });
+        promisse.then(p => { localStorage.setItem('token',JSON.stringify(p.data)); navigate("/historic")});
         promisse.catch(p => { console.log(p); alert("preencha os dados corretamente") });
 
     }
